@@ -21,6 +21,7 @@ import GithubButton from 'components/atoms/buttons/githubButton';
 import UserButton from 'components/atoms/buttons/userButton';
 import { Logo } from 'components/atoms/logo';
 import NewChatButton from 'components/molecules/newChatButton';
+import FeedbackButton from 'components/molecules/feedbackButton';
 
 import { IProjectSettings } from 'state/project';
 
@@ -175,6 +176,7 @@ const Header = memo(
             spacing={1}
             color="text.primary"
           >
+            <FeedbackButton />
             <NewChatButton />
             <Box ml={1} />
             <GithubButton href={projectSettings?.ui?.github} />
